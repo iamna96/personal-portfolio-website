@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Amna Tanoli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--------------------Header section---------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/weblogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Amna</span> <br> From Pakistan</h1>
+                <p>Web Developer</p>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------------About section-------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="line"></div>
+                    <p>Hi, my name is Amna. I'm a web developer from pakistan. I enjoy building beautiful and responsive
+                        websites. I love to have fun with code. I am also passionate about graphic designing, i like
+                        working on projects for graphic design, wesites logo, web posters/banners. For Fun, i love
+                        travelling, singing and working on amazing projects</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Bachelor of studies in Software Engineering (BSSE)</span><br>BS in software
+                                Engineering, &nbsp; &nbsp;(2017-2021)<br></li>
+                            <li><span>Higher Secondary School Certificate (HSSC)</span><br> Hssc (Pre-engineering),
+                                &nbsp; &nbsp;(2016-2017)</li>
+                            <li><span> Secondary School Certificate (SSC)
+                                </span><br>SSC (Science),&nbsp; &nbsp; (2014-2015)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sr. Computer Operator</span><br>Work as a Sr. Computer Operator in MITZ (Software
+                                House). </li>
+                            <li><span>Trainee Engineer</span><br>Work on a project "Secure IT Environment" in PepsiCo
+                                Pakistan</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Skills</span></li>
+                        </ul>
+                        <div class="row">
+                            <div class="skills-col">
+                                <p>HTML5</p>
+                                <p>CSS</p>
+                                <p>JavaScript</p>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="skills-col">
+                                <p>Tailwind css</p>
+                                <p>illustrator</p>
+                                <p>Photoshop</p>
+                                <p>Aftereffects</p>
+                            </div>
+                            <div class="skills-col">
+                                <p>Wordpress</p>
+                                <p>Jquery</p>
+                                <p>Light Mysql</p>
+                                <p>Light PHP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--------------------------Services-------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="line"></div>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I can develop custom modern websites. My layout look and work great on any screen size. My
+                        projects are designed to function properly and ensure usability for every visitor. </p>
+                </div>
+                <div>
+                    <i class="fa fa-wordpress"></i>
+                    <h2>Wordpress Websites</h2>
+                    <p>I can develop beautiful wordpress business websites, Wordpress website SEO Optimization,
+                        Wordpress website speed optimization, wordpress website security.</p>
+                </div>
+                <div>
+                    <i class="fa fa-crop"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>I can create beautiful website logos, favicons, website banners/posters.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Portfolio---------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="line"></div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>AT Fitness</h3>
+                        <p>AT Fitness is a landing page for gym that provides information about the gym's services,
+                            prices plan etc. It is written in HTML and CSS</p>
+                        <a href="https://github.com/iamna96/gym-landing-page" class="work-btn" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>This is my personal portfolio website. It is written in Pure HTML, CSS with a touch of
+                            JavaScript. I didn't use any framework or library for it.</p>
+                        <a href="https://github.com/iamna96/personal-portfolio-website" class="work-btn" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Lost & Found Web App</h3>
+                        <p>This is basically a web application where people can search their lost items by categories
+                            and also return something that he/she found somewhere.</p>
+                        <a href="https://github.com/iamna96/web-based-lost-and-found-service" class="work-btn" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="line"></div>
+            <p>Let's make something cool together !</p><br>
+            <p>Feel free to connect and message me on linkedin: <a href="https://www.linkedin.com/in/amna-rafique/"
+                    target="_blank">Amna's
+                    Linkedin</a></p>
+            <div class="social-icons">
+                <a href="https://www.github.com/iamna96/" target="_blank"> <i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amna-rafique/" target="_blank"> <i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Amna. All Right Reserved</p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }  
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
